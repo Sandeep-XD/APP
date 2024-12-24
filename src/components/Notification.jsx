@@ -19,7 +19,7 @@ const Notification = () => {
                             </div>
                             <div className="sub-btn mt-3">
                                 <button type="submit" onClick={handleSubBtn}
-                                 className="btn bg-red-400 text-yellow-50 p-2 rounded-md hover:bg-red-500 text-[13px]">Subscribe</button>
+                                 className="btn bg-red-400 text-white p-2 rounded-md hover:bg-red-500 text-[13px]">Subscribe</button>
                             </div>
                         </form>
                     </div>

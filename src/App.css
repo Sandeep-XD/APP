@@ -42,3 +42,6 @@
   text-align: center;
   background-color: rgb(255, 215, 250);
 }
+input{
+  width: 100%;
+}
