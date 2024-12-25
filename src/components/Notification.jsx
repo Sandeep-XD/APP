@@ -15,7 +15,7 @@ const Notification = () => {
                     <div className="notify-form">
                         <form className='form-content flex-col'>
                             <div className="input-field">
-                                <input type="email" id="notify-name" className='px-1 rounded-sm' placeholder="email"/>
+                                <input type="email" id="notify-name" className='px-1 rounded-sm focus:outline-none' placeholder="email"/>
                             </div>
                             <div className="sub-btn mt-3">
                                 <button type="submit" onClick={handleSubBtn}

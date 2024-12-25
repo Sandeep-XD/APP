@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 const Counter = () => {
     const[value , setValue]=useState(0);
     const handleIncrement = () => {
-        setValue(value + 1);
+        setValue(prev=>prev+1);
         }
     const handleDecrement =() =>{
         if (value > 0){
-            setValue(value - 1);
+            setValue(prev=>prev-1);
         }
         else{
             setValue(0)
@@ -22,7 +22,7 @@ const Counter = () => {
                 </button>
             </div>
             <div className="item-input flex justify-center">
-                <input type="text" value={value} className="item-input-box rounded-md py-2"/>
+                <input type="text" value={value} onChange={(e)=>{setValue(parseInt(e.target.value))}} className="item-input-box rounded-md py-2"/>
             </div>
             <div className="decrease-btn">
                 <button className='ui-btn hover:bg-pink-100'  onClick={handleDecrement}>
