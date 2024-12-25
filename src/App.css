@@ -42,6 +42,19 @@
   text-align: center;
   background-color: rgb(255, 215, 250);
 }
+input:focus{
+  outline: none;
+}
 input{
   width: 100%;
+}
+.login-btn{
+  background-color: bisque;
+  min-width: 50px;
+  margin-top: 1em;
+  border-radius: .5em;
+  padding: 3px 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: rgb(249, 57, 57) 0px 0px 20px 2px;
 }
